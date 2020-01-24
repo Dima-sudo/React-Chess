@@ -1,0 +1,22 @@
+.board{
+    /* margin: 3rem 0px 3rem 0px; */
+    border: 2px solid #3f704d;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+
+    margin-top: 1rem; 
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.button{
+    margin-top: 2rem !important;
+    width: 85.5%;
+}
+
+.gameover-msg{
+    font-weight: lighter;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+

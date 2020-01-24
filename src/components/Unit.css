@@ -1,0 +1,21 @@
+.white{
+    color: white;
+    text-shadow: 0 0 3px #000;
+    transition: color 200ms;
+    font-size: 8.5vh;
+}
+
+.black{
+    color: #7da87b;
+    text-shadow: 0 0 3px #000;
+    transition: color 200ms;
+    font-size: 8.5vh;
+}
+
+.black:hover{
+    color: rgba(125, 168, 123, 0.8);
+}
+
+.white:hover{
+    color: rgba(255, 255, 255, 0.8);
+}

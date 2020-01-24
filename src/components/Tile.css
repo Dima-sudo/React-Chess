@@ -1,0 +1,68 @@
+.board-tile-filled{
+    border: 1px solid #2f2f2f;
+    width: 10vh;
+    height: 10vh;
+    background: #043927;
+}
+
+.board-tile-empty{
+    border: 1px solid #2f2f2f;
+    width: 10vh;
+    height: 10vh;
+    background: #ecf4f3;
+}
+
+.board-tile-canKill{
+    border: 1px solid #2f2f2f;
+    width: 10vh;
+    height: 10vh;
+    /* background: rgb(245, 117, 139); */
+    cursor: pointer;
+    animation-name: flashKill;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.board-tile-selected{
+    border: 1px solid #2f2f2f;
+    width: 10vh;
+    height: 10vh;
+    /* background: lightblue; */
+    cursor: pointer;
+    animation-name: flashMove;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes flashKill{
+    10%{
+        background: rgba(245, 117, 139, 0.7)
+    }
+
+    60%{
+        background: rgb(245, 117, 139)
+    }
+
+    100%{
+        background: rgb(245, 117, 139)
+    }
+}
+
+@keyframes flashMove{
+    10%{
+        background: rgba(173, 216, 230, 0.6)
+    }
+
+    60%{
+        background: rgb(165, 211, 255)
+    }
+
+    100%{
+        background: rgb(165, 211, 255)
+    }
+}

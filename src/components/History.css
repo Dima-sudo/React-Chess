@@ -1,0 +1,39 @@
+#list-main-frame{
+    width: 100%;
+    max-Width: 80%;
+    /* background-color: theme.palette.background.paper; */
+    min-height: 49%;
+    max-height: 80vh;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 2rem !important;
+    border: 2px solid #3f704d;
+    box-Shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: auto;
+}
+
+.list-item:nth-of-type(even){
+    background-color: rgba(125, 168, 123, 0.2) !important;
+}
+
+.primary{
+    color: #043927 !important;
+}
+
+.list-subheader{
+    font-size: 5rem;
+}
+
+.list-subheader{
+    margin-top: 0.5rem !important;
+}
+
+ul{
+    background-color: "inherit";
+    padding: 0 !important;
+}
+
+.text{
+    text-align: center !important;
+}
