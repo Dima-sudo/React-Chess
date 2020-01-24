@@ -1,4 +1,51 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+# React-Chess
+A Chess game implemented in React from scratch
+
+
+Motivation for the project:
+===========================
+Until this point most of the things I've built were focused on design and the most complex logic was some back-end code.
+In this project, I wanted to build something a little more logic focused and practice React design principles I learned.
+In addition, a major goal I've set is to come up with my own implementation from scratch without using any logic libraries 
+or looking at other existing implementation because that would hinder the learning process.
+
+
+IMPLEMENTATION
+====================================
+My implementation consists of a few large functions that make everything work:
+Select: The select function selects a clicked unit and shows all possible movement/kill options for the unit in that turn.
+Unselect: Bound to the context-menu on-right-click button, unselects a unit.
+UpdateBoard: Injects the changes into the board to show the new board, also updates the stats of the daughter components.
+Step: The function responsible for the actual movement of the pieces.
+
+Every unit has it's own select function, except for the Queen which is a combination of Rook and Bishop to not repeat code.
+
+
+Challenges, things I learned and dev process:
+=============================================
+The biggest challenge in this project was when I learned that it's impossible to interact with the state the same way you'd
+interact with a matrix in java or similar (i.e matrix[i][j] = ...). Hence, it was an interesting challenge to figure how to 
+implement such a function elegantly.
+Secondly, learned about some of the technical limitations of lifecycle methods and additional React design principles. Most notably
+since lifecycle methods have to be pure I opted for moving some of the wrapper functions into the turn functions.
+Lastly, learned about ways to improve preformance and prevent un-needed re-renders in a component, somethign most courses don't 
+touch upon.
+
+
+Features not implemented and reasoning:
+=======================================
+Pawn promotion panel, basic AI.
+At this point when the game was pretty much done, I still wanted to implement basic AI (i.e a function that will run in two-player
+mode and will evaluate kill/move turns basic on a numeric generated score) and the promotion panel for the Pawn. I've decided against 
+this since I felt there is no significant learning value to be taken from implementing these features and that I'm ready to move
+to my next project.
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+
 
 ## Available Scripts
 
@@ -37,32 +84,4 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
