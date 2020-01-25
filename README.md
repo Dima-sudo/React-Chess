@@ -1,7 +1,7 @@
 
-################################################################################
+#####################################################################################
 # Live Version: https://dima-sudo.github.io/React-Chess/ #
-################################################################################
+#####################################################################################
 
 # React-Chess
 A Chess game implemented in React from scratch
@@ -15,7 +15,7 @@ In addition, a major goal I've set is to come up with my own implementation from
 or looking at other existing implementation because that would hinder the learning process.
 
 
-IMPLEMENTATION
+Implementation
 ====================================
 My implementation consists of a few large functions that make everything work:
 Select: The select function selects a clicked unit and shows all possible movement/kill options for the unit in that turn.
